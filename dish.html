@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container">
+    <a class="navbar-brand" href="#">Restaurent</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu.html">Menu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="reservation.html">Reservation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact </a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <button class="btn btn-outline-success"  type="submit" ><a href="login.html">Log in</a></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- 2. DISH DETAILS SECTION -->
+    <div class="container my-5">
+        <div class="dish-card mx-auto shadow-sm bg-white rounded-4 overflow-hidden position-relative">
+
+            <!-- Dish Image -->
+            <div class="dish-image-wrapper" >
+                <img src="images/Chef recm.png" height="400px" class="w-100 h-100 object-cover">
+            </div>
+
+            <!-- Main Dish Content -->
+            <main class="p-4 mb-5">
+                <!-- Badges & Rating -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-warning-subtle text-warning-focus rounded-pill px-3 py-2 fw-bold text-uppercase tracking-wider">🔥 Popular</span>
+                        <span class="badge bg-danger-subtle text-danger rounded-pill px-3 py-2 fw-bold text-uppercase tracking-wider">🌶️ Spicy</span>
+                    </div>
+                    <div class="text-muted small fw-medium">
+                        <i class="bi bi-star-fill text-warning me-1"></i><strong>4.8</strong> <span class="text-black-50">(120+ reviews)</span>
+                    </div>
+                </div>
+
+                <!-- Title & Price -->
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <h1 class="h2 fw-bold text-dark mb-0">Smoked Truffle Burger</h1>
+                    <span class="h3 fw-bold text-success mb-0">$16.50</span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-secondary lh-lg mb-4">
+                    Premium aged beef patty infused with black truffle oil, melted Swiss cheese, caramelized onions, and wild arugula on a toasted brioche bun.
+                </p>
+
+                <!-- Customization Form -->
+                <form class="vstack gap-4">
+                    <!-- Required Choice: Patty Size -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="h6 fw-bold text-dark mb-0">Choose Patty Size</h3>
+                            <span class="badge bg-secondary-subtle text-secondary rounded-1 px-2 py-1 small">Required</span>
+                        </div>
+                        <div class="vstack gap-2">
+                            <label class="custom-selector d-flex justify-content-between align-items-center p-3 border rounded-3 bg-light cursor-pointer">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input text-dark" type="radio" name="size" id="sizeSingle" checked>
+                                    <label class="form-check-label fw-medium ms-2" for="sizeSingle">Single Patty</label>
+                                </div>
+                                <span class="text-muted small">Free</span>
+                            </label>
+                            <label class="custom-selector d-flex justify-content-between align-items-center p-3 border rounded-3 cursor-pointer">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="radio" name="size" id="sizeDouble">
+                                    <label class="form-check-label fw-medium ms-2" for="sizeDouble">Double Patty</label>
+                                </div>
+                                <span class="text-muted small">+$4.00</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Optional Add-ons -->
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="h6 fw-bold text-dark mb-0">Add Extras</h3>
+                            <span class="text-muted small">Optional</span>
+                        </div>
+                        <div class="vstack gap-2">
+                            <label class="custom-selector d-flex justify-content-between align-items-center p-3 border rounded-3 cursor-pointer">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" id="extraCheese">
+                                    <label class="form-check-label fw-medium ms-2" for="extraCheese">Extra Swiss Cheese</label>
+                                </div>
+                                <span class="text-muted small">+$1.50</span>
+                            </label>
+                            <label class="custom-selector d-flex justify-content-between align-items-center p-3 border rounded-3 cursor-pointer">
+                                <div class="form-check m-0">
+                                    <input class="form-check-input" type="checkbox" id="extraBacon">
+                                    <label class="form-check-label fw-medium ms-2" for="extraBacon">Smoked Bacon</label>
+                                </div>
+                                <span class="text-muted small">+$2.50</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Special Instructions -->
+                    <div>
+                        <h3 class="h6 fw-bold text-dark mb-2">Special Instructions</h3>
+                        <textarea class="form-control p-3 border rounded-3 row-textarea" placeholder="e.g., No onions, sauce on the side..."></textarea>
+                    </div>
+                </form>
+
+                <!-- Nutrition & Allergens Info -->
+                <div class="mt-4 p-3 bg-light rounded-3 border border-light-subtle text-muted small">
+                    <p class="mb-1"><strong>Nutrition:</strong> 720 kcal | 42g Protein | 54g Carbs | 32g Fat</p>
+                    <p class="mb-0 text-danger-emphasis"><strong>Allergens:</strong> Gluten, Dairy, Wheat</p>
+                </div>
+            </main>
+
+            <!-- Sticky Bottom Action Bar -->
+            <div class="sticky-action-bar position-absolute bottom-0 start-0 end-0 p-3 bg-white border-top d-flex align-items-center gap-3 z-3">
+                <div class="d-flex align-items-center border rounded-3 overflow-hidden bg-light">
+                    <button class="btn btn-link text-decoration-none text-dark px-3 py-2 fw-bold" type="button">−</button>
+                    <span class="px-2 fw-bold text-dark">1</span>
+                    <button class="btn btn-link text-decoration-none text-dark px-3 py-2 fw-bold" type="button">+</button>
+                </div>
+                <button class="btn btn-dark flex-grow-1 py-2.5 rounded-3 fw-semibold text-uppercase tracking-wider shadow-sm transition-all">
+                    Add to Cart — $16.50
+                </button>
+            </div>
+
+        </div>
+    </div>
+ <!-- Footer Section -->
+  <h1 id="clock"></h1>
+<footer class="bg-dark text-white pt-5 pb-3" id="main-footer">
+    <div class="container">
+        <div class="row g-4 mb-5">
+            
+            <!-- Column 1: Brand & About -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="d-flex align-items-center mb-3">
+                    <div class="bg-warning text-dark d-inline-block rounded-circle p-2 me-2">
+                        <i class="bi bi-shield-lock-fill fs-5"></i>
+                    </div>
+                    <h4 class="fw-bold text-white mb-0">Gourmet Haven</h4>
+                </div>
+                <!-- Changed text-muted to text-white-50 for perfect dark background readability -->
+                <p class="text-white-50 small pe-lg-4">
+                    Experience culinary excellence with our handpicked ingredients and unique recipes crafted by world-class chefs. Your memorable dining journey begins right here.
+                </p>
+                
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="col-6 col-lg-2">
+                <h5 class="fw-bold text-white mb-4 position-relative pb-2">
+                    Quick Links
+                    <span class="position-absolute bottom-0 start-0 bg-warning" style="width: 35px; height: 2px;"></span>
+                </h5>
+                <!-- Changed text-muted links to text-white with custom hover classes -->
+                <ul class="list-unstyled d-flex flex-column gap-2 small">
+                    <li><a href="#" class="text-white text-decoration-none hover-link">Home</a></li>
+                    <li><a href="#" class="text-white text-decoration-none hover-link">About Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none hover-link">Our Menu</a></li>
+                    <li><a href="#" class="text-white text-decoration-none hover-link">Chef's Special</a></li>
+                    <li><a href="#" class="text-white text-decoration-none hover-link">Book A Table</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Opening Hours -->
+            <div class="col-6 col-lg-3">
+                <h5 class="fw-bold text-white mb-4 position-relative pb-2">
+                    Opening Hours
+                    <span class="position-absolute bottom-0 start-0 bg-warning" style="width: 35px; height: 2px;"></span>
+                </h5>
+                <!-- Cleaned labels to text-white-50 for high contrast structures -->
+                <ul class="list-unstyled d-flex flex-column gap-2 small text-white-50">
+                    <li class="d-flex justify-content-between"><span class="text-white-50">Monday - Friday:</span> <span class="text-white fw-semibold">10 AM - 11 PM</span></li>
+                    <li class="d-flex justify-content-between"><span class="text-white-50">Saturday:</span> <span class="text-white fw-semibold">09 AM - 12 PM</span></li>
+                    <li class="d-flex justify-content-between"><span class="text-white-50">Sunday:</span> <span class="text-warning fw-bold">Closed</span></li>
+                    <li class="mt-2 text-warning"><i class="bi bi-patch-check-fill me-1"></i> Happy Hour: 4 PM - 6 PM</li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Info -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="fw-bold text-white mb-4 position-relative pb-2">
+                    Contact Us
+                    <span class="position-absolute bottom-0 start-0 bg-warning" style="width: 35px; height: 2px;"></span>
+                </h5>
+                <!-- Replaced text-muted with explicit contrast tags -->
+                <ul class="list-unstyled d-flex flex-column gap-3 small text-white">
+                    <li class="d-flex align-items-start">
+                        <i class="bi bi-geo-alt-fill text-warning me-2 mt-1"></i>
+                        <span class="text-white">123 Culinary Court, Foodie District, New York, NY 10001</span>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-telephone-fill text-warning me-2"></i>
+                        <a href="tel:+1234567890" class="text-white text-decoration-none hover-link">+1 (234) 567-890</a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                        <i class="bi bi-envelope-fill text-warning me-2"></i>
+                        <a href="mailto:info@gourmethaven.com" class="text-white text-decoration-none hover-link">info@gourmethaven.com</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="border-top border-secondary pt-4 mt-4">
+            <div class="row align-items-center justify-content-between g-3 text-center text-md-start">
+                <div class="col-12 col-md-6">
+                    <p class="text-white-50 small mb-0">&copy; 2026 Gourmet Haven. All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 text-md-end">
+                    <ul class="list-inline mb-0 small">
+                        <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none hover-link px-2">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none hover-link px-2">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white-50 text-decoration-none hover-link px-2">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
